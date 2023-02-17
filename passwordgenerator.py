@@ -23,8 +23,8 @@ def start():
     print("------------------------")
     try:
         length = int(input("How many characters do you want to use? -> "))
-        if length == 0:
-            print("ERROR: You need to provide a value")
+        if length == 0 or length < 0:
+            print("ERROR: You need to provide a positive value")
             return
     except:
         print("ERROR: Please enter an integer")
